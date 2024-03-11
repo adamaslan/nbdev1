@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "nbdev1"
+  site-url: "https://adamaslan.github.io/nbdev1"
+  description: ""
+  repo-branch: main
+  repo-url: "https://github.com/adamaslan/nbdev1"
