@@ -1,0 +1,15 @@
+---
+title: "About"
+image: so-up.jpeg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/codeboyadam
+    # (additional links excluded for brevity)
+---
+
+## About this blog
+
+This is the contents of the about page for my blog.
