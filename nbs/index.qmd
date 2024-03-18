@@ -1,0 +1,27 @@
+---
+title: Yoooo LLMs thooo
+author: AA
+description: A website built with Quarto
+# You can add other website-wide settings here like navbar configuration
+navbar:
+  left:
+    - text: Home
+      href: /  # Link to this file itself (/)
+    - text: About
+      href: /blog/about.qmd  # Assuming an "about" page exists in a subdirectory
+    - text: Blog
+      href: /blog/
+---
+
+**Welcome to My Website!**
+
+This is a brief introduction to my website. You can find more information about me and my work in the following sections:
+
+* [About](/about/) - Learn more about me and my background.
+* [Blog](/blog/) - Read my latest blog posts on various topics.
+
+[Imagen of A landscape painting with rolling hills, a clear blue sky, and a winding river]  # Optional image for the hero section
+
+**Stay tuned for more!**
+
+This website is still under development, but I'll be adding more content soon. 
