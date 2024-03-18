@@ -14,7 +14,15 @@ website:
   navbar:
     background: primary
     search: true
-  sidebar:
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Blog"  # New link for blog
+        href: /blog/  # Link points to blog 
+    right:
+      - text: "About"  # New link for about.qmd
+        file: about.qmd
+    # sidebar: 
     style: floating
 
 metadata-files: [nbdev.yml, sidebar.yml]
