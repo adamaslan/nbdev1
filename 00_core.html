@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>nbdev1</title>
+<title>nbdev1 - core</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -57,22 +57,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,10 +102,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../../styles.css">
-<meta property="og:title" content="nbdev1">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="nbdev1 - core">
+<meta property="og:description" content="">
 <meta property="og:site_name" content="nbdev1">
-<meta name="twitter:title" content="nbdev1">
+<meta name="twitter:title" content="nbdev1 - core">
+<meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -116,7 +118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">nbdev1</span>
     </a>
   </div>
@@ -127,17 +129,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../blog/"> 
+    <a class="nav-link" href="./blog/"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -157,166 +159,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-
-<div id="cell-0" class="cell" data-execution_count="3">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># check if we can import the llama.cpp python bindings </span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> llama_cpp <span class="im">import</span> Llama</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">core</h1>
 </div>
-<div id="cell-1" class="cell" data-execution_count="4">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># point the Llama class to the model weights we downloaded in the previous sections</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>work_dir <span class="op">=</span> <span class="st">"/Users/adamaslan/code/llm-class/llama.cpp/"</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>llm <span class="op">=</span> Llama(<span class="ss">f"</span><span class="sc">{</span>work_dir<span class="sc">}</span><span class="ss">/models/gemma-7b-it/gemma-7b-it-Q5_K_M.gguf"</span>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>llama_model_loader: loaded meta data with 21 key-value pairs and 254 tensors from /Users/adamaslan/code/llm-class/llama.cpp//models/gemma-7b-it/gemma-7b-it-Q5_K_M.gguf (version GGUF V3 (latest))
-llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
-llama_model_loader: - kv   0:                       general.architecture str              = gemma
-llama_model_loader: - kv   1:                               general.name str              = gemma-7b-it
-llama_model_loader: - kv   2:                       gemma.context_length u32              = 8192
-llama_model_loader: - kv   3:                          gemma.block_count u32              = 28
-llama_model_loader: - kv   4:                     gemma.embedding_length u32              = 3072
-llama_model_loader: - kv   5:                  gemma.feed_forward_length u32              = 24576
-llama_model_loader: - kv   6:                 gemma.attention.head_count u32              = 16
-llama_model_loader: - kv   7:              gemma.attention.head_count_kv u32              = 16
-llama_model_loader: - kv   8:                 gemma.attention.key_length u32              = 256
-llama_model_loader: - kv   9:               gemma.attention.value_length u32              = 256
-llama_model_loader: - kv  10:     gemma.attention.layer_norm_rms_epsilon f32              = 0.000001
-llama_model_loader: - kv  11:                       tokenizer.ggml.model str              = llama
-llama_model_loader: - kv  12:                tokenizer.ggml.bos_token_id u32              = 2
-llama_model_loader: - kv  13:                tokenizer.ggml.eos_token_id u32              = 1
-llama_model_loader: - kv  14:            tokenizer.ggml.padding_token_id u32              = 0
-llama_model_loader: - kv  15:            tokenizer.ggml.unknown_token_id u32              = 3
-llama_model_loader: - kv  16:                      tokenizer.ggml.tokens arr[str,256128]  = ["&lt;pad&gt;", "&lt;eos&gt;", "&lt;bos&gt;", "&lt;unk&gt;", ...
-llama_model_loader: - kv  17:                      tokenizer.ggml.scores arr[f32,256128]  = [0.000000, 0.000000, 0.000000, 0.0000...
-llama_model_loader: - kv  18:                  tokenizer.ggml.token_type arr[i32,256128]  = [3, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, ...
-llama_model_loader: - kv  19:               general.quantization_version u32              = 2
-llama_model_loader: - kv  20:                          general.file_type u32              = 17
-llama_model_loader: - type  f32:   57 tensors
-llama_model_loader: - type q5_K:  168 tensors
-llama_model_loader: - type q6_K:   29 tensors
-llm_load_vocab: mismatch in special tokens definition ( 544/256128 vs 388/256128 ).
-llm_load_print_meta: format           = GGUF V3 (latest)
-llm_load_print_meta: arch             = gemma
-llm_load_print_meta: vocab type       = SPM
-llm_load_print_meta: n_vocab          = 256128
-llm_load_print_meta: n_merges         = 0
-llm_load_print_meta: n_ctx_train      = 8192
-llm_load_print_meta: n_embd           = 3072
-llm_load_print_meta: n_head           = 16
-llm_load_print_meta: n_head_kv        = 16
-llm_load_print_meta: n_layer          = 28
-llm_load_print_meta: n_rot            = 192
-llm_load_print_meta: n_embd_head_k    = 256
-llm_load_print_meta: n_embd_head_v    = 256
-llm_load_print_meta: n_gqa            = 1
-llm_load_print_meta: n_embd_k_gqa     = 4096
-llm_load_print_meta: n_embd_v_gqa     = 4096
-llm_load_print_meta: f_norm_eps       = 0.0e+00
-llm_load_print_meta: f_norm_rms_eps   = 1.0e-06
-llm_load_print_meta: f_clamp_kqv      = 0.0e+00
-llm_load_print_meta: f_max_alibi_bias = 0.0e+00
-llm_load_print_meta: n_ff             = 24576
-llm_load_print_meta: n_expert         = 0
-llm_load_print_meta: n_expert_used    = 0
-llm_load_print_meta: pooling type     = 0
-llm_load_print_meta: rope type        = 2
-llm_load_print_meta: rope scaling     = linear
-llm_load_print_meta: freq_base_train  = 10000.0
-llm_load_print_meta: freq_scale_train = 1
-llm_load_print_meta: n_yarn_orig_ctx  = 8192
-llm_load_print_meta: rope_finetuned   = unknown
-llm_load_print_meta: ssm_d_conv       = 0
-llm_load_print_meta: ssm_d_inner      = 0
-llm_load_print_meta: ssm_d_state      = 0
-llm_load_print_meta: ssm_dt_rank      = 0
-llm_load_print_meta: model type       = 7B
-llm_load_print_meta: model ftype      = Q5_K - Medium
-llm_load_print_meta: model params     = 8.54 B
-llm_load_print_meta: model size       = 5.72 GiB (5.75 BPW) 
-llm_load_print_meta: general.name     = gemma-7b-it
-llm_load_print_meta: BOS token        = 2 '&lt;bos&gt;'
-llm_load_print_meta: EOS token        = 1 '&lt;eos&gt;'
-llm_load_print_meta: UNK token        = 3 '&lt;unk&gt;'
-llm_load_print_meta: PAD token        = 0 '&lt;pad&gt;'
-llm_load_print_meta: LF token         = 227 '&lt;0x0A&gt;'
-llm_load_tensors: ggml ctx size =    0.10 MiB
-llm_load_tensors: offloading 0 repeating layers to GPU
-llm_load_tensors: offloaded 0/29 layers to GPU
-llm_load_tensors:        CPU buffer size =  5854.40 MiB
-...................................................................................
-llama_new_context_with_model: n_ctx      = 512
-llama_new_context_with_model: freq_base  = 10000.0
-llama_new_context_with_model: freq_scale = 1
-llama_kv_cache_init:        CPU KV buffer size =   224.00 MiB
-llama_new_context_with_model: KV self size  =  224.00 MiB, K (f16):  112.00 MiB, V (f16):  112.00 MiB
-llama_new_context_with_model:        CPU input buffer size   =     8.01 MiB
-llama_new_context_with_model:        CPU compute buffer size =   506.25 MiB
-llama_new_context_with_model: graph splits (measure): 1
-AVX = 1 | AVX_VNNI = 0 | AVX2 = 1 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | FMA = 1 | NEON = 0 | ARM_FMA = 0 | F16C = 1 | FP16_VA = 0 | WASM_SIMD = 0 | BLAS = 1 | SSE3 = 1 | SSSE3 = 1 | VSX = 0 | MATMUL_INT8 = 0 | 
-Model metadata: {'general.file_type': '17', 'general.quantization_version': '2', 'tokenizer.ggml.padding_token_id': '0', 'tokenizer.ggml.eos_token_id': '1', 'tokenizer.ggml.model': 'llama', 'gemma.attention.layer_norm_rms_epsilon': '0.000001', 'general.architecture': 'gemma', 'gemma.attention.head_count_kv': '16', 'gemma.feed_forward_length': '24576', 'tokenizer.ggml.bos_token_id': '2', 'gemma.embedding_length': '3072', 'gemma.block_count': '28', 'tokenizer.ggml.unknown_token_id': '3', 'gemma.attention.key_length': '256', 'gemma.context_length': '8192', 'general.name': 'gemma-7b-it', 'gemma.attention.value_length': '256', 'gemma.attention.head_count': '16'}
-Using fallback chat format: None</code></pre>
-</div>
-</div>
-<div id="cell-2" class="cell" data-execution_count="5">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># asking Gemma for help building a website</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>prefix <span class="op">=</span> <span class="st">"&lt;start_of_turn&gt;user"</span> </span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>suffix <span class="op">=</span> <span class="st">"&lt;end_of_turn&gt;</span><span class="ch">\n</span><span class="st">&lt;start_of_turn&gt;model</span><span class="ch">\n</span><span class="st">"</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>prompt <span class="op">=</span> <span class="st">"Please provide 10 simple steps for building a website."</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>full_prompt <span class="op">=</span> <span class="ss">f'''&lt;start_of_turn&gt;user</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="sc">{</span>prompt<span class="sc">}</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;end_of_turn&gt;</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="ss">&lt;start_of_turn&gt;model"</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ss">'''</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-3" class="cell" data-execution_count="6">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calling the llm from the notebook</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>output <span class="op">=</span> llm(</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    full_prompt, </span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    max_tokens<span class="op">=</span><span class="dv">500</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    temperature<span class="op">=</span><span class="fl">0.0</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    repeat_penalty<span class="op">=</span><span class="fl">1.0</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    echo<span class="op">=</span><span class="va">True</span>,</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>)<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-llama_print_timings:        load time =   17481.13 ms
-llama_print_timings:      sample time =     182.91 ms /   306 runs   (    0.60 ms per token,  1672.98 tokens per second)
-llama_print_timings: prompt eval time =   17479.62 ms /    23 tokens (  759.98 ms per token,     1.32 tokens per second)
-llama_print_timings:        eval time =  138334.62 ms /   305 runs   (  453.56 ms per token,     2.20 tokens per second)
-llama_print_timings:       total time =  166783.57 ms /   328 tokens</code></pre>
-</div>
-</div>
-<div id="cell-4" class="cell" data-execution_count="7">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># viewing the in-notebook gemma-7b-it generation</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(output[<span class="st">'choices'</span>][<span class="dv">0</span>][<span class="st">'text'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>&lt;start_of_turn&gt;user
-Please provide 10 simple steps for building a website.
-&lt;end_of_turn&gt;
-&lt;start_of_turn&gt;model"
-**1. Choose a Domain Name:** Select a domain name that is relevant to your website's purpose and easy to remember.
 
-**2. Choose a Web Host:** Select a web hosting service that meets your needs in terms of bandwidth, storage space, and reliability.
 
-**3. Select a Content Management System (CMS):** Choose a CMS platform that allows you to easily manage your website content. Popular options include WordPress, Drupal, and Joomla.
 
-**4. Design Your Website:** Create a visually appealing website design that aligns with your brand identity. Consider factors such as layout, color scheme, and fonts.
+<div class="quarto-title-meta">
 
-**5. Create Pages:** Develop key pages such as your homepage, about page, contact page, and product pages. Include clear content and high-quality images.
+    
+  
+    
+  </div>
+  
 
-**6. Optimize for Search Engines:** Use SEO techniques to optimize your website for search engines, such as using relevant keywords and meta descriptions.
 
-**7. Add Content:** Fill your website with valuable content that engages your target audience. This could include blog posts, articles, videos, and images.
+</header>
 
-**8. Promote Your Website:** Once your website is live, promote it through various channels, such as social media, email marketing, and paid advertising.
 
-**9. Track and Analyze:** Use analytics tools to track your website's performance and make data-driven adjustments.
-
-**10. Continuously Update:** Keep your website up-to-date with fresh content, security updates, and technological advancements.</code></pre>
-</div>
-</div>
+<blockquote class="blockquote">
+<p>Fill in a module description here</p>
+</blockquote>
+<p>::: {#cell-3 .cell 0=‘h’ 1=‘i’ 2=‘d’ 3=‘e’}</p>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> nbdev.showdoc <span class="im">import</span> <span class="op">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>:::</p>
+<p>::: {#cell-4 .cell 0=‘e’ 1=‘x’ 2=‘p’ 3=‘o’ 4=‘r’ 5=‘t’}</p>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> foo(): <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>:::</p>
+<p>::: {#cell-5 .cell 0=‘h’ 1=‘i’ 2=‘d’ 3=‘e’}</p>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> nbdev<span class="op">;</span> nbdev.nbdev_export()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>:::</p>
 
 
 
