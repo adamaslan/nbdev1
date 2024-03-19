@@ -1,0 +1,12 @@
+---
+title: "Quarto How To"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+---
+
+## Quarto is God
+
+

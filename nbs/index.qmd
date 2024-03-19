@@ -8,9 +8,9 @@ navbar:
     - text: Home
       href: /  # Link to this file itself (/)
     - text: About
-      href: /blog/about.qmd  # Assuming an "about" page exists in a subdirectory
+      href: about.qmd  # Assuming an "about" page exists in a subdirectory
     - text: Blog
-      href: /blog/
+      href: blog/
 ---
 
 **Welcome to My Website!**
